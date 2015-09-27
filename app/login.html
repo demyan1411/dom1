@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Логин</title>
+    <title>Сайт портфолио</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- build:css css/vendor.min.css-->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css css/style.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--endbuild-->
+    <!-- build:css css/oldIe.min.css--><!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/oldIe.css"><![endif]-->
+    <!-- endbuild-->
+    <!-- build:js js/modernizr.min.js-->
+    <script src="bower/modernizr/modernizr.js"></script>
+    <!-- endbuild-->
+  </head>
+  <body>
+    <div class="main_wrap login_main_wrap">
+      <div class="main login_main">
+        <div class="login section_info noPaddingRight">
+          <header class="section_header"><span class="section_header_text">Авторизируйтесь</span></header>
+          <div class="login_form">
+            <form><span class="desc">Логин</span>
+              <label for="login" class="label">
+                <input id="login" type="text" name="login" placeholder="Введите логин" data-tooltip="Введите логин" class="login_input">
+              </label><span class="desc">Пароль</span>
+              <label for="pass" class="label">
+                <input id="pass" type="text" name="pass" placeholder="Введите пароль" data-tooltip="Введите пароль" class="login_input">
+              </label>
+              <button type="submit" class="button button_sub">Войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrapp"><a href="login.html" class="lock_unlock noselect"> </a>
+        <div class="wrapp_footer">
+          <div class="footer_text">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+      </div>
+    </footer>
+    <div id="preload" class="popup1">
+      <div class="popup1__overlay"></div><img src="img/bx_loader.gif" alt="preload" class="popup1__preload">
+    </div>
+    <div id="success" class="popup1">
+      <div class="popup1__overlay"></div>
+      <div class="popup1__content">
+        <div class="popup1__content-inner">Ваша заявка отправлена</div><a class="popup1__close">&otimes;</a>
+      </div>
+    </div>
+    <div id="error" class="popup1">
+      <div class="popup1__overlay"></div>
+      <div class="popup1__content">
+        <div class="popup1__content-inner popup1__content-inner_error">Ошибка</div><a class="popup1__close">&otimes;</a>
+      </div>
+    </div>
+    <!-- build:js js/vendor.min.js-->
+    <!-- bower:js-->
+    <script src="bower/jquery/jquery.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js js/main.min.js-->
+    <script src="js/modules.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild-->
+    <!-- build:js js/iePlaceholder.min.js--><!--[if lte IE 9]>
+    <script src="js/iePlaceholder.js"></script><![endif]-->
+    <!-- endbuild-->
+  </body>
+</html>

@@ -1,0 +1,11 @@
+block link
+-var menu = { 'Обо мне': 'index.html', 'Мои работы': 'works.html', 'Связаться со мной': 'contacts.html' }
+nav.nav
+	ul.menu
+		each val, key in menu
+			if selected === key
+				li.noselect.punkt_menu.active
+					a.punkt_menu_a(href=val)= key
+			else
+				li.noselect.punkt_menu
+					a.punkt_menu_a(href=val)= key

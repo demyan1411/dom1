@@ -1,0 +1,61 @@
+block link
+  -var selected = 'Обо мне';
+
+extends ../layouts/main_layout.jade
+
+block title
+  title главная
+
+block content
+  section.section_info
+    .h2 Основная информация
+    .cl
+      .imgI
+        img.imgI_img(src='img/i.jpg', alt='Me')
+      .info_me
+        .cl.cl_me
+          span.cl_me_boldtext Меня зовут:
+          span.cl_me_normaltext Дроздов Демьян Андреевич
+        .cl.cl_me
+          span.cl_me_boldtext Мой возраст:
+          span.cl_me_normaltext 24 года
+        .cl.cl_me
+          span.cl_me_boldtext Мой город:
+          span.cl_me_normaltext Москва, Россия
+        .cl.cl_me
+          span.cl_me_boldtext Моя специализация:
+          span.cl_me_normaltext FRONTEND разработчик / Html верстальщик
+        .cl.cl_me
+          span.cl_me_boldtext Ключевые навыки:
+          ul.skills
+            li.scill html
+            li.scill CSS
+            li.scill javaScript
+            li.scill jquery
+            li.scill git
+            li.scill gulp
+            li.scill bower
+            li.scill npm
+  section.section_info
+    .h2 Опыт работы
+    .info_text.info_text1
+      .h3 «Mokselle» — Frond-end разработчик
+      .info_text_p Июль 2014 - Апрель 2015.
+      .info_text_p
+        | Вёрстка Landing-page по psd-макету, добавление интерактивности, создание css3 анимации, подключение и настройка эффектов параллакса, настройка проверки и отправки форм, перенос на хостинг, настройка счётчиков и целей метрики и аналитики, внесение различного рода правок, работа с чужим кодом, поддержка проектов.
+    .info_text.info_text2
+      .h3 «Daily Profit» — Frond-end разработчик
+      .info_text_p Май 2015 — по настоящее время.
+      .info_text_p
+        | Поддержка сложного Landing-page, оперативное внесение правок, робота с javascript, jquery, json, настройка адаптивности.
+  section.section_info
+    .h2 Образование
+    .info_text.info_text3
+      .h3 Высшее. РГСУ
+      .info_text_p Октябрь 2010 - июль 2015
+    .info_text.info_text4
+      .h3 Курсы в "Специалисте"
+      .info_text_p ноябрь 2013 - февраль 2014
+    .info_text.info_text4
+      .h3 Курсы Loftschool.ru
+      .info_text_p Июль 2015 - по настоящее время

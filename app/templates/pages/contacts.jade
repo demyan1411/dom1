@@ -1,0 +1,37 @@
+block link
+  -var selected = 'Связаться со мной';
+
+extends ../layouts/main_layout.jade
+
+block title
+  title Контакты
+
+block content
+  section.section_info.noPaddingRight.center
+    header.section_header
+      span.section_header_text У вас интересный проект? Напишите мне
+    .contact_form
+      form(action="php/mail.php")
+        .input.half.half_margin.beBlock
+          span.desc Имя
+          label.label
+            input(type='text', name='name', placeholder='Как к Вам обращаться', data-validation="text", data-tooltip='Вы не ввели имя', data-tooltip-position="left")
+        .input.half.beBlock
+          span.desc Email
+          label.label
+            input(type='email', name='email', placeholder='Куда мне писать', data-validation="mail", data-tooltip='Вы не ввели email', data-place='right')
+        .input
+          span.desc Сообщение
+          label.label
+            textarea(name='comment', rows='8', placeholder='Кратко в чем суть', data-validation="text", data-tooltip='Ваш вопрос', data-tooltip-position="right").textarea
+        .field
+          span.desc Введите код, указанный на картинке
+          .input.half.half_margin
+            .code
+              img.code_img(src='img/code.png', alt='code')
+          .input.half
+            label.label
+              input(type='text', name='code', placeholder='Введите код', data-tooltip='Вы не ввели код', data-place='right')
+        .cl
+          button.button.button_sub(type='submit') Отправить
+          button.button.button_res(type='reset') Очистить

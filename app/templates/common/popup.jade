@@ -1,0 +1,23 @@
+.popup_overlay  
+#popup1.popup.login.section_info.noPaddingRight
+  header.section_header
+    span.section_header_text Добавление проекта
+    .popup_close  
+  .popup_form
+    form#add_new_project(enctype='multipart/form-data')
+      .server_mes.error_mes
+      .server_mes.success_mes
+      span.desc Название проекта
+      label.label
+        input#project_name.popup_input(type='text', name='projectName', placeholder='Введите название', data-tooltip='введите название')
+      span.desc Картинка проекта
+      label.fileform.label
+        span#fileformlabel.fileformlabel Загрузите изображение
+        input#upload.upload(type='file', name='user_pic', data-tooltip='изображение')
+      span.desc URL проекта
+      label.label
+        input#project_url.popup_input(type='text', name='projectUrl', placeholder='Добавьте ссылку', data-tooltip='ссылка на проект')
+      span.desc Сообщение
+      label.label
+        textarea#project_text(name='projectText', rows='6', placeholder='Пара слов о Вашем проекте', data-tooltip='описание проекта')
+      button.button.button_sub(type='submit') Добавить

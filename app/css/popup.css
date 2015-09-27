@@ -1,0 +1,152 @@
+.popup_overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #58697a;
+	background: rgba(88,105,122,.75);
+	z-index: 0;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.popup_close {
+	background: url(../img/popup_close.png) 0 0 no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 11px;
+	top: 9px;
+	cursor: pointer;
+}
+.popup.login {
+	max-width: 360px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 11;
+	left: 50%;
+	top: -100%;
+	position: fixed;
+	text-align: left;
+	-webkit-transition: all .8s cubic-bezier(0.105, 0.500, 0.500, 1.390);
+	transition: all .8s cubic-bezier(0.105, 0.500, 0.500, 1.390);
+}
+.popup.active_popup {
+	top: 50%;
+}
+.popup .section_header {
+	padding: 9px 12px 5px;
+	border-bottom: 9px solid #67dffa;
+	margin-bottom: 10px;
+	position: relative;
+}
+.popup .section_header_text {
+	font-size: 25px;
+
+}
+.popup .popup_form {
+	padding: 0 7%;
+	text-align: center;
+}
+
+.popup_input {
+	margin-bottom: 10px;
+}
+.popup input, .popup .placeholder {
+	padding: 11px;
+}
+.popup .button_sub {
+	text-align: center;
+	display: inline-block;
+	font-size: 19px;
+	line-height: 35px;
+	padding: 0 24px;
+	margin-top: 15px;
+	font-family: 'fira_sansbook';
+}
+input[type="file"] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.desc {
+	display: block;
+	margin-bottom: 2px;
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	line-height: 20px;
+	text-align: left;
+	color: #959aa8;
+}
+
+.fileform {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: middle;
+	outline: none;
+	font-family: 'fira_sanslight';
+	color: #48cbe8;
+	font-size: 13px;
+	border: 1px solid #48cbe8;
+	margin-bottom: 10px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #fbfcfd;
+}
+
+.fileform:after {
+	content: '';
+	cursor: pointer;
+    overflow: hidden;
+    width: 50px;
+    height: 100%;
+	border: none;
+	outline: none;
+    background: #48cbe8 url(../img/load_btn.png) center center no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.fileform .upload{
+    top:0;
+    left:0;
+    width:100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 0;
+    z-index:20;
+    cursor:pointer;
+    position:absolute;
+    height:100%;
+}
+.fileform .fileformlabel {
+	height: 100%;
+	width:100%;
+	font-family: 'fira_sanslight';
+	color: #48cbe8;
+	font-size: 13px;
+	line-height: 22px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+}
+.server_mes {
+	display: none;
+}

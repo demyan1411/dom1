@@ -1,0 +1,18 @@
+doctype html
+html(lang='ru-RU')
+	include ../common/head.jade
+	body
+		.main_wrap
+			.main
+				include ../common/header.jade
+				.content
+					.wrapp
+						.info
+							block content
+
+						aside.aside
+							include ../common/menu.jade
+							include ../common/adress.jade
+		include ../common/footer.jade
+		include ../common/popup.jade
+		include ../common/scripts.jade

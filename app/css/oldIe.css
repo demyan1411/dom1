@@ -1,0 +1,12 @@
+.icon:hover:before {
+	z-index:2;
+}
+.info_text:before {
+	margin-top: -15px;
+}
+.img_overlay {
+	display: none;
+}
+.work_block_img:hover .img_overlay {
+	display: block;
+}

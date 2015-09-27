@@ -1,0 +1,31 @@
+#preload.popup1
+  .popup1__overlay
+  img(src="img/bx_loader.gif", alt="preload").popup1__preload
+#success.popup1
+  .popup1__overlay
+  .popup1__content
+    .popup1__content-inner Ваша заявка отправлена
+    a.popup1__close &otimes;
+#error.popup1
+  .popup1__overlay
+  .popup1__content
+    .popup1__content-inner.popup1__content-inner_error Ошибка
+    a.popup1__close &otimes;
+
+
+// build:js js/vendor.min.js
+// bower:js
+script(src='bower/jquery/jquery.js')
+// endbower
+// endbuild
+
+// build:js js/main.min.js
+script(src='js/modules.js')
+script(src='js/main.js')
+// endbuild
+
+// build:js js/iePlaceholder.min.js
+<!--[if lte IE 9]>
+script(src='js/iePlaceholder.js')
+<![endif]-->
+// endbuild
